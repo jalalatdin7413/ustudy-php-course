@@ -2,8 +2,9 @@
 
 define("PI", 3.13159);
 
-function MaydanEsaplaw($radius) {
-    // R=PI*$radius^2;
+function MaydanEsaplaw($radius)
+{
+  // R=PI*$radius^2;
 }
 
 MaydanEsaplaw(5);
@@ -14,18 +15,19 @@ echo MaydanEsaplaw(5);
 $name = "Jalalatdin";
 $age = 20;
 
-echo "Menin atim $name, jasim $age da." "<br>".;
+echo "Menin atim $name, jasim $age da." . "<br>";
 
 // task3
 
-function calculate($a , $b) {
-  return 
-    echo  "<br>";
-   "Kobeymesi:" . $a + $b."<br>".
-    "Qosindisi :" . $a - $b . "<br>".
-     "Ayirmasi :" . $a * $b . "<br>".
-     "Boliniwi :" . $a / $b ." <br>" ;
+function calculate($a, $b)
+{
+  return "<br>" .
+    "Kobeymesi:" . $a + $b . "<br>" .
+    "Qosindisi :" . $a - $b . "<br>" .
+    "Ayirmasi :" . $a * $b . "<br>" .
+    "Boliniwi :" .
 
- }
+    $a / $b . " <br>";
+}
 
-   echo calculate   (23,5);
+echo calculate(23, 5);

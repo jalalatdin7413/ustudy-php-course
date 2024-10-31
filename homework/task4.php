@@ -162,79 +162,88 @@ if ($login == "jalal" && $password == "7413") {
 
 echo "<br>";
 echo "<br>";
- 
- $year = 1924;
 
-  if (($year %4 ==0 && $year % 100 != 0) || $year %400 ==0) {
-    echo "Kabisa jili";
-  }  else {
-    echo "Kabisa jili emes";
-  }
+$year = 1924;
 
-  //12-esap
-  echo "<br>";
-  echo "<br>";
+if (($year % 4 == 0 && $year % 100 != 0) || $year % 400 == 0) {
+  echo "Kabisa jili";
+} else {
+  echo "Kabisa jili emes";
+}
 
-  $a = 15;
-  $b =5;
-  $operation = "-";
+//12-esap
+echo "<br>";
+echo "<br>";
 
-   switch ($operation) {
-    case "+": echo $a + $b; break;
-    case "-": echo $a - $b; break;
-    case "*": echo $a * $b; break;
-    case "/": echo $b != 0 ?  $a / $b: "Nolge boliw qate"; break;
-    default: echo "Qate operatsiya";
-   }
-    echo "<br>";
-    echo "<br>";
+$a = 15;
+$b = 5;
+$operation = "-";
 
-    
- // 13-esap 
- $age = 19; 
- $dayOfweek = 5; 
- 
-  if ($age >= 18 && $dayOfweek >= 1 && $dayOfweek <= 5) { 
-    echo "Weekdays"; 
-  } else { 
-    echo "Weekend"; 
-  } 
-  // 14-esap 
- 
-  echo "<br>"; 
-  echo "<br>"; 
- 
-  $a = 24; 
-  $b = 54; 
-  $c = 15; 
- 
- $min = $a; 
- 
- if ($b < $min) $min = $b; 
- if ($c < $min) $min = $c; 
- 
-  echo "En kishi san: $min "; 
- 
-  // 15-esap  
- 
-  echo "<br>"; 
-  echo "<br>"; 
- 
-  $x = 13; 
-  $y = -3; 
- 
-  if ($x > 0 && $y > 0) { 
-    echo " Birinshi sherekte"; 
-  } elseif ($x < 0 && $y >0) { 
-     echo "Ekinshi sherekte"; 
-  } elseif ($x < 0 && $y <0) { 
-    echo "Ushinshi sherekte"; 
-  } elseif ($x > 0 && $y <0) { 
-    echo "Tortinshi sherekte"; 
-  } elseif ($x == 0 && $y == 0) { 
-    echo "Tochka orayda jaylasqan"; 
-  } elseif ($x == 0) { 
-    echo "Tochka Y ta jaylasqan"; 
-  } elseif ($y == 0) { 
-    echo "Tochka X ta jaylasqan"; 
-  }
+switch ($operation) {
+  case "+":
+    echo $a + $b;
+    break;
+  case "-":
+    echo $a - $b;
+    break;
+  case "*":
+    echo $a * $b;
+    break;
+  case "/":
+    echo $b != 0 ?  $a / $b : "Nolge boliw qate";
+    break;
+  default:
+    echo "Qate operatsiya";
+}
+echo "<br>";
+echo "<br>";
+
+
+// 13-esap 
+$age = 19;
+$dayOfweek = 5;
+
+if ($age >= 18 && $dayOfweek >= 1 && $dayOfweek <= 5) {
+  echo "Weekdays";
+} else {
+  echo "Weekend";
+}
+// 14-esap 
+
+echo "<br>";
+echo "<br>";
+
+$a = 24;
+$b = 54;
+$c = 15;
+
+$min = $a;
+
+if ($b < $min) $min = $b;
+if ($c < $min) $min = $c;
+
+echo "En kishi san: $min ";
+
+// 15-esap  
+
+echo "<br>";
+echo "<br>";
+
+$x = 13;
+$y = -3;
+
+if ($x > 0 && $y > 0) {
+  echo " Birinshi sherekte";
+} elseif ($x < 0 && $y > 0) {
+  echo "Ekinshi sherekte";
+} elseif ($x < 0 && $y < 0) {
+  echo "Ushinshi sherekte";
+} elseif ($x > 0 && $y < 0) {
+  echo "Tortinshi sherekte";
+} elseif ($x == 0 && $y == 0) {
+  echo "Tochka orayda jaylasqan";
+} elseif ($x == 0) {
+  echo "Tochka Y ta jaylasqan";
+} elseif ($y == 0) {
+  echo "Tochka X ta jaylasqan";
+}

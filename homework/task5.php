@@ -165,3 +165,25 @@ $sum = 0;
     }
    }
     echo "On' sanlar: $positiveCount, Teris sanlar: $negativeCount";
+    
+    echo "<br>";
+    echo "<br>";
+    // 11-esap
+    $n = 2;
+    while ($n <= 10) {
+        echo $n . "<br>";
+        $n += 2;
+    }
+    echo "<br>";
+    echo "<br>";
+    // 12-esap 
+
+    $number = 16;
+    $isPrime = true;
+    for ($n = 2; $n <= sqrt($number); $n++) {
+        if ($number % $n == 0) {
+            $isPrime = false;
+            break;
+        }
+    }
+     echo $isPrime ? "$number apiwayi" : "$number quramali";

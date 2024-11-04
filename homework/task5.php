@@ -104,86 +104,139 @@ echo "<br>";
 echo "<br>";
 
 $sum = 0;
- for ($n = 1; $n <= 50; $n++) {
-    if ($n %2 == 0) {
+for ($n = 1; $n <= 50; $n++) {
+    if ($n % 2 == 0) {
         $sum += $n;
     }
- }
- echo "1 den 50 ge shekemgi jup sanlar summasi: $sum";
- 
-  // 6-esap
+}
+echo "1 den 50 ge shekemgi jup sanlar summasi: $sum";
 
-  echo "<br>";
-  echo "<br>";
+// 6-esap
 
-  $a = 10;
-  do {
+echo "<br>";
+echo "<br>";
+
+$a = 10;
+do {
     echo $a . "<br>";
     $a--;
-  } while ($a >= 1);
+} while ($a >= 1);
 
-  // 7-esap
+// 7-esap
 
-  echo "<br>";
-  echo "<br>";
+echo "<br>";
+echo "<br>";
 
-  $num = [22, -45, 23, 31, -11];
-  foreach ($num as $index => $n) {
+$num = [22, -45, 23, 31, -11];
+foreach ($num as $index => $n) {
     if ($n < 0) {
         echo "Birinshi en kishi san: $n ideksi $index ";
         break;
     }
-  }
-  // 8-esap
-  echo '<br>';
-  echo '<br>';
+}
+// 8-esap
+echo '<br>';
+echo '<br>';
 
-  for( $n = 1; $n <= 20; $n += 2) {
+for ($n = 1; $n <= 20; $n += 2) {
     echo $n . "<br>";
-  }
-  echo "<br>";
-  echo "<br>";
+}
+echo "<br>";
+echo "<br>";
 
-  // 9-esap
+// 9-esap
 
-   $text = "Karakalpakstan";
-   for ($n = 0; $n < strlen($text); $n++) {
+$text = "Karakalpakstan";
+for ($n = 0; $n < strlen($text); $n++) {
     echo $text[$n] . "<br>";
-   }
-   echo "<br>";
-   echo "<br>";
+}
+echo "<br>";
+echo "<br>";
 
-   // 10-esap
-   $massiv = [2, -5, 6, -9, 3, -7];
-   $positiveCount =0;
-   $negativeCount = 0;
-   foreach ($massiv as $n) {
+// 10-esap
+$massiv = [2, -5, 6, -9, 3, -7];
+$positiveCount = 0;
+$negativeCount = 0;
+foreach ($massiv as $n) {
     if ($n > 0) {
         $positiveCount++;
     } elseif ($n < 0) {
         $negativeCount++;
     }
-   }
-    echo "On' sanlar: $positiveCount, Teris sanlar: $negativeCount";
-    
-    echo "<br>";
-    echo "<br>";
-    // 11-esap
-    $n = 2;
-    while ($n <= 10) {
-        echo $n . "<br>";
-        $n += 2;
-    }
-    echo "<br>";
-    echo "<br>";
-    // 12-esap 
+}
+echo "On' sanlar: $positiveCount, Teris sanlar: $negativeCount";
 
-    $number = 16;
-    $isPrime = true;
-    for ($n = 2; $n <= sqrt($number); $n++) {
-        if ($number % $n == 0) {
-            $isPrime = false;
-            break;
-        }
+echo "<br>";
+echo "<br>";
+// 11-esap
+$n = 2;
+while ($n <= 10) {
+    echo $n . "<br>";
+    $n += 2;
+}
+echo "<br>";
+echo "<br>";
+// 12-esap 
+
+$number = 16;
+$isPrime = true;
+for ($n = 2; $n <= sqrt($number); $n++) {
+    if ($number % $n == 0) {
+        $isPrime = false;
+        break;
     }
-     echo $isPrime ? "$number apiwayi" : "$number quramali";
+}
+echo $isPrime ? "$number apiwayi" : "$number quramali";
+echo "<br>";
+echo "<br>";
+// 13-esap
+$a = 0;
+$b = 1;
+for ($n = 0; $n < 10; $n++) {
+echo $a . "<br>";
+$temp = $a + $b;
+$a = $b;
+$b = $temp;
+}
+echo "<br>";
+echo "<br>";
+
+// 14-esap
+
+$san = 7;
+$sum = 0;
+$n = 1;
+do {
+    $sum += $n;
+    $n++;
+} while ($n < $san);
+echo "Qosindi $san g'a shekemgi: $sum";
+
+echo "<br>";
+echo "<br>";
+// 15-esap
+
+$array = [
+    13,
+    24,
+    67,
+    42,
+    89
+];
+foreach ($array as &$key) {
+    $key = ($key%2 == 0) ? $key *2 : $key -1;
+}
+print_r($array);
+
+echo "<br>";
+echo "<br>";
+
+// Инкремент и декремент 1-esap
+
+$count = 0;
+$n = 1;
+while ($n <= 19) {
+    $count++;
+    $n += 2 ;
+}
+echo "Takirarlawlar sani: $count";

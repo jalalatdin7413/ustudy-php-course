@@ -240,3 +240,42 @@ while ($n <= 19) {
     $n += 2 ;
 }
 echo "Takirarlawlar sani: $count";
+
+echo "<br>";
+echo "<br>";
+
+// 2-esap
+
+for ($n = 0; $n <= 20; $n += 2) {
+echo $n . "<br>";
+}
+echo "<br>";
+echo "<br>";
+
+// 3-esap 
+
+ for ($n = 14; $n >= 0; $n--)
+ echo $n . "<br>";
+echo "<br>";
+echo "<br>";
+
+// 4-esap 
+
+$san = 5;
+$shegara = 34;
+ while ($san < $shegara) {
+    $san *= 3;
+ }
+ echo "Aqirgi manis: $san";
+
+ echo "<br>";
+ echo "<br>";
+
+ // 5-esap 
+
+ for ($n = 20; $n >= 0; $n -= 2) {
+    echo $n . "<br>";
+ }
+ // toliq islendi 
+
+ 

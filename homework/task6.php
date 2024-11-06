@@ -246,6 +246,49 @@ echo "<br><br>";
 // 18-esap
 
 $books = [
-  
+  ["name" => "Atomic Habits",
+   "Avtor" => "James Clear",
+   "year" => "2021"],
+
+   ["name" => "Deep work",
+   "Avtor" => "Cal Newport",
+   "year" => "2023"],
+
+   ["name" => "MEN",
+   "Avtor" => "Fotih Duman",
+   "year" => "2020"]
+
+    ];
+
+
+    $new = array_filter($books, function ($book) {
+      return $book['year'] >=2023;
+    });
+    print_r($new);
+
+    echo "<br><br>";
+
+    // 19-esap
+
+    $team = [
+      ["club" => "Real Madrid", "country" => "Spain", "players" => "Ronaldo, Ramos, Kross"],
+      ["club" => "Manshester United", "counrty" => "England", "players" => "Rooney, Nani, Beckham"],
+      ["club" => "Juventus", "country" => "Italy", "players" => "Buffon, Pogba, Bonucci"]
+    ];
+
+    print_r($team);
+
+    //19.2 -esap
+    /*
+    $teams = [
+      ["club" => "Real Madrid", "country" => "Spain", "players" => "Ronaldo, Ramos, Kross"],
+      ["club" => "Manshester United", "counrty" => "England", "players" => "Rooney, Nani, Beckham"],
+      ["club" => "Juventus", "country" => "Italy", "players" => "Buffon, Pogba, Bonucci"]
+    ];
+    foreach ($teams as $teamS) {
+      echo "{$teamS['teamS']} ({$teamS['country']}): " . implode(", ", $teamS['players']) . "\n"; 
+    }
+      */
     
-];
+
+

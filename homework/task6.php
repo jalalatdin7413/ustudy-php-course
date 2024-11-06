@@ -125,3 +125,127 @@ echo "<br>";
     "Portugal" => "Lissabon"
  ];
   echo $country["Rossiya"];
+
+  echo "<br><br>";
+  // 2-usil
+
+  /*$countries = ["France" => "Paris", "Spain" => "Madrid", "England" => "London"];
+  function getCapital($country) {
+    global $country;
+    return $countries[$country] ?? "England";
+  }
+  echo getCapital("England");
+*/
+echo "<br><br>";
+
+
+
+// 10-esap
+$chessBoard = [
+    ["T", "A", "Q", "W", "K", "Q", "A", "T"],
+    ["P", "P", "P", "P", "P", "P", "P", "P"],
+    ["", "", "", "", "", "", "", ""],
+    ["", "", "", "", "", "", "", ""],
+    ["", "", "", "", "", "", "", ""],
+    ["", "", "", "", "", "", "", ""],
+    ["p", "p", "p", "p", "p", "p", "p", "p"],
+    ["t", "a", "q", "w", "k", "q", "a", "t"],
+];
+foreach ($chessBoard as $row) {
+    echo implode(" ", $row) . "\n";
+}
+
+echo "<br><br>";
+
+// 11-esap
+
+$studentler = [
+    "Jalal" => 90,
+    "Begis" => 88,
+    "Aybek" => 84,
+    "Turar" => 80,
+    "Ramazan" => 78
+];
+ $topScore = max($studentler);
+ $topPerson = array_search($topScore, $studentler);
+
+ echo "Top student: $topPerson with $topScore ball";
+
+ echo "<br><br>";
+
+ // 12-esap
+
+ $nameS = ["Ronaldo", "Benzama", "Bale", "Ramos", "Marcelo"];
+
+ sort($nameS);
+ print_r($nameS);
+
+echo "<br><br>";
+
+// 13-esap
+
+$holiday = [
+    "Kross" => ["07-07-2024", "09-09-2024"],
+    "Modric" => ["05-05-2024", "08-08-2024"],
+    "Guler" => ["15-09-2024", "23-10-2024"]
+];
+print_r($holiday);
+
+echo "<br><br>";
+
+// 14-esap
+
+$numberS = [45, 24, 76, 93, 88];
+$sAn = array_filter($numberS, fn($num) => $num %2 === 0);
+print_r($sAn);
+
+echo "<br><br>";
+
+// 15-esap 
+
+$months = [
+    "January" => 31,
+    "February" => 29,
+    "March" => 31,
+    "April" => 30,
+    "May" => 31,
+    "June" => 30,
+    "July" => 31,
+    "August" => 31,
+    "September" => 30,
+    "October" => 31,
+    "November" => 30,
+    "December" => 31
+];
+print_r($months["February"]) ;
+echo "<br>";
+echo "<br>";
+echo "Days of February: " . $months["February"];
+
+echo "<br>";
+echo "<br>";
+
+// 16-esap
+
+$tablica = [
+    "Monday" => ["9:00" => "Math", "11:00" => "English" ],
+    "Friday" => ["11:00" => "Filolofiya", "15:00" => "Biologiya"]
+];
+print_r($tablica["Monday"]);
+
+echo "<br><br>";
+
+// 17-esap
+
+$sanLar = [34, 23, 14, 71, 19, 25, 17, 45, 72];
+$nomer = array_sum($sanLar);
+print_r($nomer);
+
+echo "<br><br>";
+
+// 18-esap
+
+$books = [
+  
+    
+];

@@ -46,9 +46,9 @@ echo "<br>";
     echo ",br>";
 
      function MathEsaplaw($a, $b) {
-        return " Qosiw $a and $b =". $a+$b "<br>"
-        "Aliw $a and $b =". $a-$b. "<br>" 
-        "Kobeytiw $a and $b =". $a*$b. "<br>"
+        return " Qosiw $a and $b =". $a+$b "<br>";
+        "Aliw $a and $b =". $a-$b. "<br>"; 
+        "Kobeytiw $a and $b =". $a*$b. "<br>";
         "Boliw $a and $b =". $a/$b.;
     
         

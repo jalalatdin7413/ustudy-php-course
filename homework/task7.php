@@ -50,7 +50,8 @@ foreach ($employees as $employee) {
     $groupEmployee[$department][] = $employee;
 }
 
-function sortBySalary($a, $b) {
+function sortBySalary($a, $b)
+{
     return $b["Salary"] - $a["Salary"];
 }
 
@@ -78,3 +79,89 @@ $megaTown = array_filter($capital, function ($item) {
 });
 
 print_r($megaTown);
+
+echo "<br><br>";
+
+// 3-esap
+
+$onim = [
+    "Elektronika" => [
+        ["name" => "Noutbook", "cena" => 200, "sani" => 70],
+        ["name" => "iPhone", "cena" => 300, "sani" => 80]
+    ],
+    "Car" => [
+        ["name" => "Gelik", "cena" => 600, "sani" => 70],
+        ["name" => "BYD", "cena" => 400, "sani" => 90]
+    ],
+    "Mebel" => [
+        ["name" => "Divan", "cena" => 150, "sani" => 40],
+        ["name" => "Kreslo", "cena" => 250, "sani" => 30]
+    ]
+];
+
+function getCategoryProduct($onim, $category)
+{
+    $categoryProducts = $onim[$category];
+    usort($categoryProducts, function ($a, $b) {
+        return $a["cena"] - $b['cena']; // bahasi boyinsha tartipleew
+    });
+    return $categoryProducts;
+}
+
+function filterByQuantity($onim, $minQuantity)
+{
+    return array_filter($onim, function ($item) use ($minQuantity) {
+        return $item['sani'] >= $minQuantity; // sani boyinsha tartipleydi
+    });
+}
+$sortedProducts = getCategoryProduct($onim, "Car");
+print_r($sortedProducts);
+
+$filteredProducts = filterByQuantity($sortedProducts, 80);
+print_r($filteredProducts);
+
+echo "<br>";
+echo "<br>";
+
+// 4-esap
+
+$good = ["Jalal", "Aybek", "Begis"]; // exam tapsirgan studentler
+$all = ["Jalal", "Aybek", "Begis", "Turar", "Ramazan"]; // barliq studentler
+
+function getNonPassedstudent($good, $all)
+{
+    $filter = array_filter($all, function ($student) use ($good) {
+        return !in_array($student, $good);
+    });
+    sort($filter); // Alfabit boyinsha
+    return $filter;
+}
+$filter = getNonPassedstudent($good, $all);
+print_r($filter);
+ 
+echo "<br><br>";
+
+// 5-esap
+
+$sayt = [
+    ["Cars", "Noutbook", "Book", "Phone"],
+    ["Book", "Noutbook", "Phone"],
+    ["Noutbook", "Book", "Phone"],
+    ["Cars", "Book", "Phone"]
+];
+
+
+$counts = [];
+
+foreach ($sayt as $say) {
+    foreach ($say as $category) {
+        if (!isset($counts[$category])) {
+            $counts[$category] = 0;
+        }
+        $counts[$category]++; // Kategoriya bar bolsa birge kobeyedi
+    }
+}
+arsort($counts);
+$topCategory = array_slice(array_keys($counts), 0,3);
+// array_slice en kop 3 kategoriyani saylap aladi
+print_r($topCategory);

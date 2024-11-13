@@ -169,7 +169,4 @@ print_r($topCategory);
 /* FUNKCIYA USHIN ESAPLAR 
 1-esap
 */
-  function factorial($x = 0; $x <= $n: $x++) {
-    return $n *= $x;
-  }
-  echo factorial(5);
+  

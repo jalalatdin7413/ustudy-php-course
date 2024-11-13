@@ -17,14 +17,15 @@ $age = 20;
 echo "My name is " . $name . " , My age " . $age . ", I'm programmer.";
 
 //3-esap
-
+/*
 echo "<br>";
 
- function calculate($a , $b){
-    return "Summ:" . $a+$b . "<br>"
-    "Aliw:" . $a-$b ."<br>"
-    "Kobeytiw:" . $a*$b . "<br>"
-   "Boliw:". $a/$b ;
+ function calculate($a , $b) {
+    return 
+    "Summ:" . $a+$b . "<br>"
+    "Aliw: " . $a-$b . "<br>"
+    "Kobeytiw: " . $a*$b . "<br>"
+    "Boliw:". $a/$b ;
 }
   echo calculate(15, 5);
 
@@ -37,19 +38,19 @@ echo "<br>";
 
   function calculateTort() {
     return "Maydan esaplaw: " . Uzinliq*Eni . "<br>"
-    "Perimetr esaplaw: " . 2*(Uzinliq+Eni);
+    "Perimetr esaplaw: " . 2*( Uzinliq + Eni );
   }
     echo calculate();
-
+   */
     //5-esap
 
     echo ",br>";
 
      function MathEsaplaw($a, $b) {
-        return " Qosiw $a and $b =". $a+$b "<br>";
-        "Aliw $a and $b =". $a-$b. "<br>"; 
-        "Kobeytiw $a and $b =". $a*$b. "<br>";
-        "Boliw $a and $b =". $a/$b.;
+        return " Qosiw $a and $b = ". $a + $b .  "<br>";
+        "Aliw $a and $b = ". $a - $b. "<br>"; 
+        "Kobeytiw $a and $b = ". $a * $b. "<br>";
+        "Boliw $a and $b = " . $a / $b . "<br>" ;
     
         
      }

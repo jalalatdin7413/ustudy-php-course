@@ -43,7 +43,7 @@ echo gettype($Obedte). "\n"; //bar yaki joq
 $toliqsan = 3050;
 $boliwshi =606;
 
-echo " Qosindisi:". ($toliqsan+$boliwshi)."\n";
+echo " Qosindisi: " . ($toliqsan+$boliwshi)."\n";
 echo " Aliwdag'i manisi:". ($toliqsan-$boliwshi)."\n";
 echo " Kobeytiw:". ($toliqsan*$boliwshi). "\n";
 echo " Boliwshi:". ($toliqsan/$boliwshi). "\n";

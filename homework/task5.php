@@ -35,8 +35,8 @@ if (strlen($text) < 10) {
 echo "<br>";
 echo "<br>";
 
-$time = date("15:00"); // usig'an onsha tusinbedim
-if ($time >= "6:00" && $time <= "18:00") {
+$time = date("15"); // usig'an onsha tusinbedim
+if ($time >= "6" && $time <= "18") {
     echo "Ku'ndiz";
 } else {
     echo "Evening";

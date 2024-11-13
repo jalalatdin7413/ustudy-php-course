@@ -1,5 +1,5 @@
 <?php
-// bul OOP ushin misal prosto internetten aldim
+// bul OOP ushin misal 
 
 class Car {
     private $model;

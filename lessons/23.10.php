@@ -1,5 +1,5 @@
 <?php
-
+/*
 define("PI", 3.13159);
 
 function MaydanEsaplaw($radius)
@@ -31,3 +31,18 @@ function calculate($a, $b)
 }
 
 echo calculate(23, 5);
+*/
+
+$chessBoard = [
+  ["R", "N", "B", "Q", "K", "B", "N", "R"],
+  ["P", "P", "P", "P", "P", "P", "P", "P"],
+  ["", "", "", "", "", "", "", ""],
+  ["", "", "", "", "", "", "", ""],
+  ["", "", "", "", "", "", "", ""],
+  ["", "", "", "", "", "", "", ""],
+  ["p", "p", "p", "p", "p", "p", "p", "p"],
+  ["r", "n", "b", "q", "k", "b", "n", "r"],
+];
+foreach ($chessBoard as $row) {
+  echo implode(" ", $row) . "\n";
+}

@@ -165,3 +165,11 @@ arsort($counts);
 $topCategory = array_slice(array_keys($counts), 0,3);
 // array_slice en kop 3 kategoriyani saylap aladi
 print_r($topCategory);
+
+/* FUNKCIYA USHIN ESAPLAR 
+1-esap
+*/
+  function factorial($x = 0; $x <= $n: $x++) {
+    return $n *= $x;
+  }
+  echo factorial(5);
